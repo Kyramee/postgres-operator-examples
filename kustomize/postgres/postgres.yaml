@@ -1,12 +1,12 @@
 apiVersion: postgres-operator.crunchydata.com/v1beta1
 kind: PostgresCluster
 metadata:
-  name: hippo
+  name: adrien-test-cluster
 spec:
   image: registry.developers.crunchydata.com/crunchydata/crunchy-postgres:ubi8-15.2-0
   postgresVersion: 15
   instances:
-    - name: instance1
+    - name: adrien-test-instance
       dataVolumeClaimSpec:
         accessModes:
         - "ReadWriteOnce"
